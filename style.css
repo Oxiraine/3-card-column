@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:hsl(0, 0%, 95%);
+}
+
+
+.options{
+    width:600px;
+    margin:auto;
+    justify-content:center;
+    align-items: center;
+    margin-top:150px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    height:350px;
+    border-radius:5px 0 0 5px;
+}
+
+img{
+    width:40px;
+    margin-left:25px;
+    margin-top:25px;
+}
+ h1{
+    color:hsl(0, 0%, 95%);
+    margin-top:20px;
+    margin-left:25px;
+    font-family:'Big Shoulders Display', cursive;
+    font-weight:700;
+    font-size:25px;
+}
+
+p{
+    font-family:'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size:11px;
+    line-height:1.6;
+    font-weight:400;
+    margin-top: 25px;
+    margin-right:25px;
+    margin-left:25px;
+
+}
+
+.suvs{
+    height:350px;
+ background-color:  hsl(184, 100%, 22%);
+}
+
+.luxury{
+    height:350px;
+ background-color:hsl(179, 100%, 13%);
+ border-radius:0 5px 5px 0;
+}
+
+a{
+    text-decoration:none;
+    margin-left:25px;
+    margin-top:50px;
+    font-family:'Lexend Deca', sans-serif;
+    font-size:10px;
+    font-weight:400;
+    text-align:center;
+    
+}
+
+
+.hero-btn{
+    display:inline-block;
+    background-color:hsl(0, 0%, 95%);
+    border-radius: 14px;
+    padding:8px;
+    padding-right:18px;
+    padding-left:18px;
+}
+
+.sedans .hero-btn{
+    color:hsl(31, 77%, 52%);
+}
+
+.suvs .hero-btn{
+    color:hsl(184, 100%, 22%);
+}
+
+.luxury .hero-btn{
+    color:hsl(179, 100%, 13%);
+}
+
+
+@media (max-width: 500px) {
+    .options,
+    grid-3{
+        width:300px;
+        grid-template-columns: 1fr
+    }
+
+    .sedans{
+        border-radius:6px 6px 0 0;
+    }
+
+
+    .luxury{
+        border-radius:0 0 6px 6px;
+        margin-bottom:140px;
+    }
+
+    .sedans p{
+        font-size:14px;
+    }
+
+    .luxury p{
+        font-size:14px;
+    }
+
+    .suvs p{
+        font-size:14px;
+    }
+    .hero-btn{
+        font-size:15px;
+        border-radius: 16px;
+        padding:10px;
+        padding-right:30px;
+        padding-left:30px;
+    }
+    .sedans a{
+        margin-top:30px;
+    }
+    
+    h1{
+        font-size:28px;
+    }
+
+}
